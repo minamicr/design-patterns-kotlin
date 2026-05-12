@@ -1,4 +1,4 @@
-package abstractfactory.model
+package abstractfactory.serverconfiguration
 
 fun main() {
     // Implementação utilizando serviço ServerConfigurationService

@@ -1,4 +1,7 @@
 package template.routine
 
-class Main {
+fun main() {
+    val schedule = MondaySchedule()
+    schedule.runSchedule()
+
 }

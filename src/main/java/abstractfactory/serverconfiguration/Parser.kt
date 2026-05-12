@@ -1,4 +1,4 @@
-package abstractfactory.model
+package abstractfactory.serverconfiguration
 
 class Parser {
 

@@ -1,4 +1,4 @@
-package abstractfactory.chess
+package factory.chess
 
 class PieceFactory {
 

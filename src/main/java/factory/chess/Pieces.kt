@@ -1,4 +1,4 @@
-package abstractfactory.chess
+package factory.chess
 
 data class Pawn(
     override val file: Char,

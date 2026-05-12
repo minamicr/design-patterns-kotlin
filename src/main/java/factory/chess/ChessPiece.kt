@@ -1,4 +1,4 @@
-package abstractfactory.chess
+package factory.chess
 
 interface ChessPiece {
     val file: Char

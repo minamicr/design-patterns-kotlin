@@ -1,4 +1,4 @@
-package abstractfactory.model
+package abstractfactory.serverconfiguration
 
 data class PropertyImpl(
     override val name: String,

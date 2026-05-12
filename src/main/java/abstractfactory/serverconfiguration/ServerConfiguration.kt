@@ -1,4 +1,4 @@
-package abstractfactory.model
+package abstractfactory.serverconfiguration
 
 interface ServerConfiguration {
     val properties: List<Property>
