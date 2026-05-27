@@ -35,3 +35,34 @@ A classe PieceFactory verifica pela primeira letra qual tipo de peça deve ser c
 No padrão template é criada uma classe do tipo abstrata, onde existem métodos com 
 implementação padrão e métodos abstratos que deverão ser implementados pela classe que a estende.
 
+## State - Snail Game
+O padrão State é similar a strategy, porém o Strategy é tipicamente alterado de
+pelo cliente, ele define quem o comportamento que será executado. Já o State
+é alterado internamente baseado nos inputs que recebe.
+
+Dicionário:
+- Snail (caracol)
+- Still (tranquilo)
+- Agressivo (agressivo)
+- Retreating (introvertido)
+- Dead (morto)
+
+### Version 1
+O Snail muda seu temperamento de acordo com as ações recebidas. É implementada
+a interface WhatCanHappen com as ações abaixo:
+- seeHero o torna agressivo (se ele estiver tranquilo)
+- getHit pode mudar para morto (dependendo da quantidade de pontos)
+- calmAgain o torna tranquilo
+
+### Version 2
+Os temperamentos implementam as ações recebidas (WhatCanHappen), e Snail 
+é o contexto. Esta abordagem é útil quando existem muitas ações ou comportamentos.
+
+### Sealed Classes em Kotlin
+São similares a enum, apenas um número limitado de classes podem estender
+uma sealed class. Consequentemente, Kotlin exige na expressão when, que todas as
+possibilidades sejam testadas, ou deve-se usar o else. Importante notar que todas
+as classes devem ser declaradas no mesmo pacote.
+
+
+
